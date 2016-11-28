@@ -10,6 +10,6 @@ class TypeUser(models.Model):
 
 
 class Profile(models.Model):
-    user_id = models.IntegerField(unique=True)
+    user = models.IntegerField(unique=True)
     name = models.CharField(max_length=100)
     photo = models.ImageField(upload_to='user', null=True)
