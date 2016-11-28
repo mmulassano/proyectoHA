@@ -11,7 +11,7 @@ class TypeThreat(models.Model):
 
 #Amenazas - threat
 class Threat(models.Model):
-   typeThreat = models.IntegerField()
+   typeThreat = models.ForeignKey(TypeThreat)
    name = models.CharField(max_length=100)
    scientific_name = models.CharField(max_length=100)
    description = models.CharField(max_length=300)
@@ -38,7 +38,7 @@ class Detection(models.Model):
    #source_score = models.CharField(max_length=100)
    date = models.CharField(max_length=100)
    damage_level = models.IntegerField()
-   movil = models.BigIntegerField()
+   movil_id = models.BigIntegerField()
    location_lat = models.CharField(max_length=100)
    location_long = models.CharField(max_length=100)
 	

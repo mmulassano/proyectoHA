@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 class Post(models.Model):
     title = models.CharField(max_length=100)
     user = models.IntegerField()
-    mobile = models.IntegerField(unique=True)
+    mobile_id = models.IntegerField(unique=True)
 
 
 ##Modelos para realizar MAPEO
@@ -18,7 +18,7 @@ class Farm(models.Model):
     user = models.IntegerField()
     name = models.CharField(max_length=100)
     active = models.BooleanField(default=True)
-    movil = models.BigIntegerField(unique=True)
+    movil_id = models.BigIntegerField(unique=True)
     #dateLastModification = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
@@ -39,7 +39,7 @@ class Parcel(models.Model):
     active = models.BooleanField(default=True)
     center_lat = models.CharField(max_length=100)
     center_long = models.CharField(max_length=100)
-    movil = models.BigIntegerField(unique=True)
+    movil_id = models.BigIntegerField(unique=True)
     
     def __unicode__(self):
         return self.name
@@ -53,7 +53,7 @@ class Activity(models.Model):
     campaign = models.CharField(max_length=100)
     date = models.CharField(max_length=100)
     active = models.BooleanField(default=True)
-    movil = models.BigIntegerField(unique=True)
+    movil_id = models.BigIntegerField(unique=True)
 
     def __unicode__(self):
         return self.campaing
