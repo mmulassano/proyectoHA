@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a25082a-0ef5-4f1e-950b-45f6ce5e1e42" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usuario/models.py" afterPath="$PROJECT_DIR$/usuario/models.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0002_auto_20160822_1024.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0003_auto_20160823_1020.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0004_auto_20160823_1635.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0005_detection_movil_id.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0006_auto_20160824_0850.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0007_auto_20160824_1054.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0008_auto_20160824_1134.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0009_auto_20160825_0830.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0010_note_user_id.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0011_auto_20160830_0934.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0012_auto_20160930_0848.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0013_auto_20160930_1039.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0014_threat_active.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0015_auto_20161006_1614.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0016_auto_20161021_1234.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0017_auto_20161021_1352.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0018_auto_20161022_1116.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0019_auto_20161025_1802.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/0020_picture_source.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alertas/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/location/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/location/migrations/0002_auto_20161021_1234.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/location/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapeo/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapeo/migrations/0002_auto_20160829_0841.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapeo/migrations/0003_auto_20161021_1234.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapeo/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pushes/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pushes/migrations/0002_auto_20160906_1125.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pushes/migrations/0003_auto_20160906_1300.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pushes/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/usuario/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/usuario/migrations/0002_profile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/usuario/migrations/__init__.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proyectoHA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,8 +60,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usuario/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -111,7 +146,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="usuario" />
+              <option name="myItemId" value="mapeo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,7 +321,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -294,7 +329,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4973939" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.4973939" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -456,16 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alertas/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/location/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -496,10 +521,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alertas/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-572">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location/migrations/0002_auto_20161021_1234.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
