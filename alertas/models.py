@@ -4,15 +4,13 @@ from django.db import models
 
 #Tipos de Amenazas - type threat
 class TypeThreat(models.Model):
-   code =  models.IntegerField(unique=True)
-   name = models.CharField(max_length=100,unique=True) 
+   name = models.CharField(max_length=100,unique=True)
 
    def __unicode__(self):
       return self.name
 
 #Amenazas - threat
 class Threat(models.Model):
-   code =  models.IntegerField()
    typeThreat = models.IntegerField()
    name = models.CharField(max_length=100)
    scientific_name = models.CharField(max_length=100)
