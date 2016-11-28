@@ -1,3 +1,9 @@
 /harry/settings.py
 /harry/wsgi.py
 /env
+/alertas/migrations
+/location/migrations
+/mapeo/migrations
+/migrations
+/pushes/migrations
+/usuario/migrations

@@ -13,4 +13,4 @@ class Device(models.Model):
     #date_create = models.CharField(max_length=100)
 
     def __unicode__(self):
-	return self.user_id
+        return self.user_id

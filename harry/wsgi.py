@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 
 import os, sys
 
-sys.path.append('/var/www/html')
-sys.path.append('/var/www/html/harryapp')
-sys.path.append('/var/www/html/media/')
+#sys.path.append('/var/www/html')
+#sys.path.append('/var/www/html/harryapp')
+#sys.path.append('/var/www/html/media/')
 
 from django.core.wsgi import get_wsgi_application
 

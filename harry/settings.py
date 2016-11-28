@@ -91,7 +91,7 @@ REST_FRAMEWORK = {
     'NON_FIELD_ERRORS_KEY':'error',
 
 
-   'DEFAULT_RENDERER_CLASSES': ( 'rest_framework.renderers.JSONRenderer',),
+    #'DEFAULT_RENDERER_CLASSES': ( 'rest_framework.renderers.JSONRenderer',),
 
     #'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
     'PAGE_SIZE': 10
@@ -150,10 +150,10 @@ DATABASES = {
         # 'OPTIONS': {
         #  'read_default_file': '/harry/my.cnf',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'harryapp',
+        'NAME': 'harry',
         'USER': 'postgres',
-        'PASSWORD': 'Harry2016',
-        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+        'PASSWORD': '84705200',
+        'HOST': 'localhost', # Or an IP Address that your DB is hosted on
         'PORT': '5432',
         },
 
@@ -204,18 +204,18 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR,"static")
+#STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
 MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), '', 'media')
 
 #STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), '', 'static-only')
 
-STATICFILES_DIRS = (
-    os.path.join(os.path.dirname(os.path.dirname(__file__)), '', 'static'),
-)
-
 #STATICFILES_DIRS = (
-#    os.path.join(BASE_DIR, 'media'),
-#d)
+    #os.path.join(os.path.dirname(os.path.dirname(__file__)), '', 'static'),
+#)
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'media'),
+)
 #Celery config
 BROKER_URL = 'django://'
