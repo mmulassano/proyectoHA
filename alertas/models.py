@@ -44,7 +44,7 @@ class Detection(models.Model):
    #source_score = models.CharField(max_length=100)
    date = models.CharField(max_length=100)
    damage_level = models.IntegerField()
-   movil_id = models.BigIntegerField()
+   movil_id = models.BigIntegerField(primary_key=True)
    location_lat = models.CharField(max_length=100)
    location_long = models.CharField(max_length=100)
 	
