@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.contrib.auth.models import User
-
+from mapeo.models import *
 
 #Tipos de Amenazas - type threat
 class TypeThreat(models.Model):
@@ -25,7 +25,7 @@ class Threat(models.Model):
 
 #Detalle Amenaza - threat detail
 class ThreatDetail(models.Model):
-   typeCrop = models.IntegerField()
+   typeCrop = models.ForeignKey(TypeCrop)
    threat = models.ForeignKey(Threat)
    rango_alcance = models.IntegerField()
    expiracion = models.CharField(max_length=100)
@@ -34,7 +34,7 @@ class ThreatDetail(models.Model):
 class Detection(models.Model):
    user = models.ForeignKey(User)
    threatDetail = models.ForeignKey(ThreatDetail)
-   activity = models.BigIntegerField()
+   activity = models.ForeignKey(Activity)
    #location_id = models.CharField(max_length=100)
    #source = models.CharField(max_length=100)
    #source_score = models.CharField(max_length=100)
@@ -58,7 +58,7 @@ class Note(models.Model):
    object = models.BigIntegerField()
    object_type = models.CharField(max_length=100)
    content = models.CharField(max_length=1000)
-   user = models.IntegerField()
+   user = models.ForeignKey(User)
    
    def __unicode__(self):
       return self.object_type
