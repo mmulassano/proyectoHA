@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.auth.models import User
+
 
 #Tipos de Amenazas - type threat
 class TypeThreat(models.Model):
@@ -30,8 +32,8 @@ class ThreatDetail(models.Model):
   
 
 class Detection(models.Model):
-   user = models.IntegerField()
-   threatDetail = models.BigIntegerField()
+   user = models.ForeignKey(User)
+   threatDetail = models.ForeignKey(ThreatDetail)
    activity = models.BigIntegerField()
    #location_id = models.CharField(max_length=100)
    #source = models.CharField(max_length=100)
@@ -44,7 +46,7 @@ class Detection(models.Model):
 	
 
 class Seen(models.Model):
-   user = models.IntegerField()
+   user = models.ForeignKey(User)
    object = models.BigIntegerField()
    object_type = models.CharField(max_length=100)
    date_time = models.CharField(max_length=100)
