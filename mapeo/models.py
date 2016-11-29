@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import User
-from alertas.models import *
 
 
 class Post(models.Model):
@@ -14,7 +13,6 @@ class Post(models.Model):
 
 #Farm (campos)
 class Farm(models.Model):
-    #id = models.IntegerField(primary_key=True)
     user = models.ForeignKey(User)
     name = models.CharField(max_length=100)
     active = models.BooleanField(default=True)
@@ -33,7 +31,7 @@ class Farm(models.Model):
 class Parcel(models.Model):
     #id = models.IntegerField(primary_key=True)
     user = models.ForeignKey(User)
-    farm = models.BigIntegerField()
+    farm = models.ForeignKey(Farm)
     name = models.CharField(max_length=100)
     surface = models.DecimalField(max_digits=10, decimal_places=2)
     active = models.BooleanField(default=True)
@@ -44,12 +42,18 @@ class Parcel(models.Model):
     def __unicode__(self):
         return self.name
 
+# Cultivos - type crop
+class TypeCrop(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __unicode__(self):
+        return self.name
 
 #Actividades en parcelas
 class Activity(models.Model):
     user = models.ForeignKey(User)
     parcel = models.ForeignKey(Parcel)
-    type_crop = models.ForeignKey(TypeCrop)
+    typeCrop = models.ForeignKey(TypeCrop)
     campaign = models.CharField(max_length=100)
     date = models.CharField(max_length=100)
     active = models.BooleanField(default=True)
@@ -59,11 +63,7 @@ class Activity(models.Model):
         return self.campaing
 
 
-#Cultivos - type crop
-class TypeCrop(models.Model):
-   name = models.CharField(max_length=100,unique=True)
 
-   def __unicode__(self):
-        return self.name
+
 
 

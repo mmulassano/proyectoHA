@@ -2,7 +2,8 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.contrib.auth.models import User
-from mapeo.models import *
+from mapeo.models import TypeCrop, Activity
+
 
 #Tipos de Amenazas - type threat
 class TypeThreat(models.Model):
@@ -29,6 +30,9 @@ class ThreatDetail(models.Model):
    threat = models.ForeignKey(Threat)
    rango_alcance = models.IntegerField()
    expiracion = models.CharField(max_length=100)
+
+   def __str__(self):
+      return "{1} - {0}".format(self.typeCrop, self.threat)
   
 
 class Detection(models.Model):
@@ -73,3 +77,6 @@ class Picture(models.Model):
    def __unicode__(self):
       return self.object_type
 
+
+#class Object(models.Model):
+   #type = models.CharField()
