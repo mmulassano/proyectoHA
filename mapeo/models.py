@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    user = models.IntegerField()
+    user = models.ForeignKey(User)
     mobile_id = models.IntegerField(unique=True)
 
 
@@ -15,7 +15,7 @@ class Post(models.Model):
 #Farm (campos)
 class Farm(models.Model):
     #id = models.IntegerField(primary_key=True)
-    user = models.IntegerField()
+    user = models.ForeignKey(User)
     name = models.CharField(max_length=100)
     active = models.BooleanField(default=True)
     movil_id = models.BigIntegerField(unique=True)
@@ -32,7 +32,7 @@ class Farm(models.Model):
 #Parcel (parcelas)
 class Parcel(models.Model):
     #id = models.IntegerField(primary_key=True)
-    user = models.IntegerField()
+    user = models.ForeignKey(User)
     farm = models.BigIntegerField()
     name = models.CharField(max_length=100)
     surface = models.DecimalField(max_digits=10, decimal_places=2)
@@ -47,9 +47,9 @@ class Parcel(models.Model):
 
 #Actividades en parcelas
 class Activity(models.Model):
-    user = models.IntegerField()
-    parcel = models.BigIntegerField()
-    type_crop = models.IntegerField()
+    user = models.ForeignKey(User)
+    parcel = models.ForeignKey(Parcel)
+    type_crop = models.ForeignKey(TypeCrop)
     campaign = models.CharField(max_length=100)
     date = models.CharField(max_length=100)
     active = models.BooleanField(default=True)
