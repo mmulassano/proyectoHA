@@ -24,7 +24,7 @@ class Threat(models.Model):
 #Detalle Amenaza - threat detail
 class ThreatDetail(models.Model):
    typeCrop = models.IntegerField()
-   threat = models.IntegerField()
+   threat = models.ForeignKey(Threat)
    rango_alcance = models.IntegerField()
    expiracion = models.CharField(max_length=100)
   
